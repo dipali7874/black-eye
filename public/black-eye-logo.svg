@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#070c14" />
+      <stop offset="85%" stop-color="#020408" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <linearGradient id="eyeTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff" />
+      <stop offset="100%" stop-color="#0088ff" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="250" cy="250" r="240" fill="url(#bgGrad)" stroke="#00b4d8" stroke-width="8" filter="url(#cyanGlow)" />
+  <circle cx="250" cy="250" r="236" fill="none" stroke="#00f2fe" stroke-width="2.5" opacity="0.8" />
+
+  <g transform="translate(0, -10)">
+    <path d="M 100 175 Q 250 55 400 175 Q 310 145 250 145 Q 190 145 100 175 Z" fill="#ffffff" />
+    <path d="M 100 175 Q 250 245 400 175 Q 310 205 250 205 Q 190 205 100 175 Z" fill="#ffffff" />
+    <path d="M 125 155 Q 250 65 375 155" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+
+    <circle cx="250" cy="175" r="54" fill="#040810" stroke="#00d4ff" stroke-width="4.5" />
+    <circle cx="250" cy="175" r="42" fill="#020408" stroke="#0099ff" stroke-width="3" />
+    
+    <line x1="250" y1="120" x2="250" y2="140" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="250" y1="210" x2="250" y2="230" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="195" y1="175" x2="215" y2="175" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="285" y1="175" x2="305" y2="175" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" />
+
+    <circle cx="250" cy="175" r="22" fill="none" stroke="#00f0ff" stroke-width="2.5" stroke-dasharray="8 4" />
+    <circle cx="250" cy="175" r="10" fill="#000000" />
+    <circle cx="262" cy="165" r="7" fill="#ffffff" />
+  </g>
+
+  <g transform="translate(250, 290)">
+    <text x="-185" y="0" font-family="'Impact', 'Arial Black', sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="3">BLACK</text>
+    <text x="55" y="0" font-family="'Impact', 'Arial Black', sans-serif" font-size="52" font-weight="900" fill="url(#eyeTextGrad)" letter-spacing="3">EYE</text>
+    <text x="0" y="24" text-anchor="middle" font-family="'Inter', 'Arial', sans-serif" font-size="13" font-weight="700" fill="#d1d5db" letter-spacing="6">MONITOR  <tspan fill="#00d4ff">•</tspan>  PREDICT  <tspan fill="#00d4ff">•</tspan>  PROTECT</text>
+  </g>
+
+  <g transform="translate(0, 10)">
+    <path d="M 215 352 A 38 38 0 0 1 285 352" fill="none" stroke="#00d4ff" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M 226 362 A 25 25 0 0 1 274 362" fill="none" stroke="#00d4ff" stroke-width="4" stroke-linecap="round" />
+    <path d="M 238 372 A 13 13 0 0 1 262 372" fill="none" stroke="#00d4ff" stroke-width="3.5" stroke-linecap="round" />
+
+    <path d="M 90 405 L 140 375 L 200 400 L 250 370 L 300 400 L 360 375 L 410 405 Z" fill="#2d3748" opacity="0.6" />
+    <path d="M 110 420 L 160 385 L 210 410 L 250 385 L 290 410 L 340 385 L 390 420 Z" fill="#1a202c" />
+
+    <g transform="translate(250, 420)">
+      <polygon points="-42,25 -22,-30 22,-30 42,25" fill="#000000" />
+      <circle cx="0" cy="5" r="4" fill="#ffffff" opacity="0.9" filter="url(#cyanGlow)" />
+
+      <line x1="-30" y1="25" x2="-6" y2="5" stroke="#718096" stroke-width="2" />
+      <line x1="30" y1="25" x2="6" y2="5" stroke="#718096" stroke-width="2" />
+      <line x1="-24" y1="20" x2="24" y2="20" stroke="#4a5568" stroke-width="1.5" />
+      <line x1="-18" y1="15" x2="18" y2="15" stroke="#4a5568" stroke-width="1.5" />
+      <line x1="-12" y1="10" x2="12" y2="10" stroke="#4a5568" stroke-width="1.2" />
+
+      <polygon points="-46,25 -42,25 -24,-30 -30,-30" fill="#4a5568" />
+      <polygon points="46,25 42,25 24,-30 30,-30" fill="#4a5568" />
+      <polygon points="-36,-30 36,-30 32,-24 -32,-24" fill="#718096" stroke="#2d3748" stroke-width="1" />
+    </g>
+  </g>
+</svg>

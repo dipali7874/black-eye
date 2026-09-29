@@ -1,0 +1,11 @@
+{
+  "include": [
+    "python_engine"
+  ],
+  "extraPaths": [
+    "C:\\Users\\jariw\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages",
+    "python_engine"
+  ],
+  "pythonPath": "C:\\Users\\jariw\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "reportMissingImports": "none"
+}

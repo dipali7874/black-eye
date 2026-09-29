@@ -1,0 +1,28 @@
+{
+  "name": "black-eye",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BLACK EYE — AI-Enabled Low-Cost Mine Subsidence Monitoring & Early Warning System (SIH 2026, Problem Statement SIH26025)",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "server": "node backend/server.js",
+    "ai": "py python_engine/ai_engine.py",
+    "emulator": "py python_engine/nodemcu_emulator.py",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.45.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.10.1",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  }
+}
